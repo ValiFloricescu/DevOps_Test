@@ -22,10 +22,10 @@ jobs:
 
       - name: Build and tag Docker image
         run: |
-          docker build -t your_username/your_image_name:${{ github.sha }} .
-          docker tag your_username/your_image_name:${{ github.sha }} your_username/your_image_name:latest
+          docker build -t shareby/prob2:${{ github.sha }} .
+          docker tag shareby/prob2:${{ github.sha }} shareby/prob2:latest
 
       - name: Push Docker image to registry
         run: |
-          docker push your_username/your_image_name:${{ github.sha }}
-          docker push your_username/your_image_name:latest
+          docker push shareby/prob2:${{ github.sha }}
+          docker push shareby/prob2:latest
