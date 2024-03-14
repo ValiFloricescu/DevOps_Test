@@ -1,0 +1,31 @@
+name: Docker Build and Push
+
+on:
+  push:
+    branches:
+      - main
+      - master
+
+jobs:
+  build-and-push:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Login to Docker registry
+        uses: docker/login-action@v2
+        with:
+          registry: docker.io
+          username: ${{ secrets.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_TOKEN }}
+
+      - name: Build and tag Docker image
+        run: |
+          docker build -t your_username/your_image_name:${{ github.sha }} .
+          docker tag your_username/your_image_name:${{ github.sha }} your_username/your_image_name:latest
+
+      - name: Push Docker image to registry
+        run: |
+          docker push your_username/your_image_name:${{ github.sha }}
+          docker push your_username/your_image_name:latest
