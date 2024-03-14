@@ -1,7 +1,7 @@
 # DevOps_Test
 ꒷꒦꒷︶˚︶︶꒷꒦˚꒦꒷︶˚︶︶꒷꒦˚︶˚︶︶꒷꒦꒷꒦꒷︶˚︶︶꒷꒦˚꒦꒷︶˚︶︶꒷꒦˚︶˚︶︶꒷꒦꒷꒦꒷︶˚︶︶꒷꒦˚꒦꒷︶˚︶︶꒷꒦˚︶˚︶︶꒷꒦꒷꒦꒷︶˚︶︶꒷꒦˚꒦꒷︶˚︶︶꒷꒦˚︶˚︶︶꒷꒦꒷꒦꒷︶˚︶︶꒷꒦˚꒦꒷︶˚︶︶꒷꒦˚︶˚︶︶꒷꒦꒷꒦꒷︶
 
--`♡´-Greeting-`♡´-,
+-`♡´- Greeting -`♡´-,
 
 This is my solution for the test I had to do. I hope it's satisfying!
 I founded to be pretty challenging working with docker sometimes, at less untill I could understand exactly how it works.
